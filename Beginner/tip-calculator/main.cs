@@ -14,6 +14,6 @@ class Program {
     decimal total_bill = bill + total_tip;
     decimal bill_per_person = total_bill / people_split;
     decimal final_amount = Math.Round(bill_per_person, 2);
-    Console.WriteLine("Each person should pay: " + "$" + final_amount); //Prints out wrong answer: 14 instead of 15.4 for total bill of 70, tip of 10 and 5 people splitting bill
+    Console.WriteLine("Each person should pay: " + "$" + final_amount.ToString("0.00")); //Prints out wrong answer: 14 instead of 15.4 for total bill of 70, tip of 10 and 5 people splitting bill
     }
 }
